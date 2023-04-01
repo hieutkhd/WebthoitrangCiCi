@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+   	<Files .htaccess>
+	order allow,deny
+	deny from all
+	</Files>
+
+	#chuyển hướng file lỗi 
+	#ErrorDocument 404 http://basephp.abc/pages
+    
+</IfModule>

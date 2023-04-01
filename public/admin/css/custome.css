@@ -1,0 +1,41 @@
+.box
+{
+    padding: 20px !important;
+}
+.form-group
+{
+    margin-bottom: 5px !important;
+}
+.text-danger
+{
+    color: red;
+}
+td a
+{
+    margin-left: 2px;
+}
+.border
+{
+    border:1px solid #dedede;
+}
+.color-red { color: red !important;}
+.border-red {border: 1px solid red;}
+
+.name {
+    white-space: nowrap;
+    width: 280px;
+    /* height: 18px; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    text-transform: none;
+}
+.padding-default {
+    padding: 0px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    color: #000 !important;
+}
