@@ -22,17 +22,19 @@ var frontend = {
         $(".add_to_cart").click( function () {
             let $idProduct = $(this).attr("data-id-product");
             let $qty = $("#qty").val() == undefined ? 1 : $("#qty").val();
-            let $size =  $("#size").val() == undefined ? '' : $("#size").val();
-            let $color =  $("#color").val() == undefined ? '' : $("#color").val();
+            let size =  $("#size").val() !== undefined ? $("#size").val() : '';
+            let color =  $("#color").val() !== undefined ? $("#color").val() : '';
+
+
             if ($("#size").val() !== undefined) {
-                if ($size == '') {
+                if (size == '') {
                     $.notify('Bạn cần chọn size sản phẩm','error');
                     return false;
                 }
             }
 
             if ($("#color").val() !== undefined) {
-                if ($color == '') {
+                if (color == '') {
                     $.notify('Bạn cần chọn màu cho sản phẩm sản phẩm','error');
                     return false;
                 }
@@ -42,7 +44,7 @@ var frontend = {
                 url:  _this.configSelecter.base_Url + '/shoppingcart/add.php',
                 async:true,
                 dataType:'json',
-                data: { idProduct : $idProduct, qty : $qty , size : $size, color : $color},
+                data: { idProduct : $idProduct, qty : $qty , size : size, color : color},
                 success: function( msg ) {
                     console.log(msg)
                     if( msg.status == 1)

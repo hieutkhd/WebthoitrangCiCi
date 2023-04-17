@@ -2,7 +2,7 @@
     <div id="header-top">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-md-6" id="header-text">
+                <div class="col-md-6" id="header-text" style="margin-top: 10px;">
                     <b style="font-family: sans-serif;">THỜI TRANG UY TÍN, CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM</b>
                 </div>
                 <div class="col-md-6">
@@ -67,6 +67,11 @@
                     $("#suggesstion-box").hide();
                 }
             </script>
+            <div class="col-md-4">
+                <a href="/">
+                    <img src="/public/frontend/images/73b1987e16215ebc976b5052bfac078d.jpg" class="logo-website">
+                </a>
+            </div>
             <div class="col-md-5">
                 <form class="form-inline" id="formtim" action="/pages/tim-kiem-san-pham.php">
                     <div class="form-group">
@@ -75,11 +80,6 @@
                     </div>
                 </form>
                 <div id="suggesstion-box"></div>
-            </div>
-            <div class="col-md-4">
-                <a href="/">
-                    <img src="/public/frontend/images/logo-cho-shop-quan-ao-online_111916076.png" style="width: 45%">
-                </a>
             </div>
             <div class="col-md-3" id="header-right">
                 <div class="pull-right">

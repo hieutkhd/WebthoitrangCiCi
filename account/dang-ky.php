@@ -39,7 +39,7 @@
         {
             // check xem email da trung chua
             $emailCheck = DB::fetchOne('users',' email = "'.$email.'"');
-            if(count($emailCheck))
+            if($emailCheck !== NULL)
             {
                 // email trung gan vao error
                 $errors['email'] = ' Email đã tồn tại ! ';
@@ -60,7 +60,8 @@
                 'email'    => $email,
                 'address'  => $address,
                 'phone'    => $phone,
-                'password' => md5($password)
+                'password' => md5($password),
+                'status'   => 1
             ];
             //tiến hành insert 
             $id_insert = DB::insert('users',$data);

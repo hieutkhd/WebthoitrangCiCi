@@ -17,14 +17,24 @@
         $sql .= ' AND prd_description LIKE "%'.Input::get('description').'%"' ;
         $filter['description'] = Input::get('description');
     }
-    if ( Input::get('category') ) {
-        $sql .= ' AND prd_category_product_id = '.Input::get('category') ;
+    if (Input::get('category') ) {
+        $idCate = Input::get('category');
+
+        $sqlCategory = 'SELECT * FROM `category_products` WHERE `cpr_parent_id` = '.$idCate;
+        $categories = DB::fetchsql($sqlCategory);
+
+        $listIds = [];
+        if (!empty($categories)) {
+            foreach ($categories as $category) {
+                array_push($listIds, $category['id']);
+            }
+        }
+        array_push($listIds, $idCate);
+        $sql .= ' AND prd_category_product_id IN ('.implode(',', $listIds).')';
+
         $filter['category'] = Input::get('category');
     }
-    if ( Input::get('category') ) {
-        $sql .= ' AND prd_category_product_id = '.Input::get('category') ;
-        $filter['category'] = Input::get('category');
-    }
+
     if ( Input::get('id') ) {
         $sql .= ' AND products.id = '.Input::get('id') ;
         $filter['id'] = Input::get('id');

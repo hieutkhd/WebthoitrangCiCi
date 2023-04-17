@@ -35,7 +35,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Giầy thể thao chất lượng cao </title>
+        <title>THỜI TRANG UY TÍN, CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM </title>
         <meta charset="utf-8">
         <?php require_once __DIR__.'/../layouts/inc_head.php'; ?>
         <style type="text/css">
@@ -70,10 +70,10 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="/public/frontend/images/slide/banner_page_2_master.jpg" alt="Los Angeles">
+                                        <img src="/public/frontend/images/slide/banner-thoi-trang-dep.jpg" alt="Los Angeles">
                                     </div>
                                     <div class="item">
-                                        <img src="/public/frontend/images/slide/banner_page_3_master.jpg" alt="Chicago">
+                                        <img src="/public/frontend/images/slide/9557036_orig.jpg" alt="Chicago">
                                     </div>
                                     <div class="item">
                                         <img src="/public/frontend/images/slide/b__trai_master.jpg" alt="New York">

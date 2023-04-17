@@ -32,10 +32,15 @@
                     <div class="container-pluid">
                         <div class="container">
                             <div class="col-md-3" id="ft-about">
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco </p>
+                                <p>
+                                    Đồ án tốt nghiệp 2023
+                                    <br />
+                                    Website bán đồ thời trang
+                                    <br />
+                                    Sinh viên: Phạm Minh Hiếu
+                                    <br />
+                                    Lớp: KTPM02 – Khóa 14
+                                </p>
                             </div>
                             <div class="col-md-3 box-footer" >
                                 <h3 class="tittle-footer"> Danh mục sản phẩm </h3>
@@ -57,11 +62,7 @@
                                     </li>
                                     <li>
                                         <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i> Liên hệ </a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-angle-double-right"></i>
-                                        <a href=""><i></i>  Contact </a>
+                                        <a href="/pages/gui-phan-hoi.php"><i></i> Liên hệ </a>
                                     </li>
                                     <li>
                                         <i class="fa fa-angle-double-right"></i>
@@ -74,9 +75,9 @@
                                 <ul>
                                     <li>
                                         
-                                        <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i>230 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội</p>
-                                        <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 0332823156</p>
-                                        <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> bachnt21097@gmail.com</p>
+                                        <p><i class="fa fa-home" style="font-size: 16px;padding-right: 5px;"></i>Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội</p>
+                                        <p><i class="sp-ic fa fa-mobile" style="font-size: 22px;padding-right: 5px;"></i> 0338120050</p>
+                                        <p><i class="sp-ic fa fa-envelope" style="font-size: 13px;padding-right: 5px;"></i> phamhieu11062001@gmail.com</p>
                                     </li>
                                 </ul>
                             </div>
@@ -84,7 +85,7 @@
                     </div>
                 </section>
                 <section id="ft-bottom">
-                    <p class="text-center">Copyright © 2019 . Design by  ... !!! </p>
+                    <p class="text-center">Copyright 2023 Design by Phạm Minh Hiếu </p>
                 </section>
             </div>
         </div>      
