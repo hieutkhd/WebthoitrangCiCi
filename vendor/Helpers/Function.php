@@ -109,9 +109,9 @@ function ColorFind($string,$fild)
 
 function sendMail($title, $content, $nTo, $mTo,$diachicc='')
 {
-    $nFrom = 'NIKE';//mail duoc gui tu dau, thuong de ten cong ty ban
-    $mFrom = 'Bachnt21097@gmail.com';  //dia chi email cua ban
-    $mPass = '01632823156';       //mat khau email cua ban
+    $nFrom = '';//mail duoc gui tu dau, thuong de ten cong ty ban
+    $mFrom = '';  //dia chi email cua ban
+    $mPass = '';       //mat khau email cua ban
     $mail             = new PHPMailer();
     $body             = $content;
     $mail->IsSMTP();
@@ -142,5 +142,16 @@ function sendMail($title, $content, $nTo, $mTo,$diachicc='')
     } else {
         return 1;
     }
+}
+
+function randString($length)
+{
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    $str = '';
+    $size = strlen($chars);
+    for ($i = 0; $i < $length; $i++) {
+        $str .= $chars[rand(0, $size - 1)];
+    }
+    return $str;
 }
 
