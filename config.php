@@ -18,7 +18,7 @@ define("DATABASE","db_thoi_trang");
 $vnp_TmnCode = "B6D7F86K"; //Mã định danh merchant kết nối (Terminal Id)
 $vnp_HashSecret = "YVVVDXXUGTGPFEVRUBWEXKIIYNNFUUTZ"; //Secret key
 $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-$vnp_Returnurl = "http://nike.abc/pages/vnpay_return.php";
+$vnp_Returnurl = "http://thoitrang.abc/pages/vnpay_return.php";
 $vnp_apiUrl = "http://sandbox.vnpayment.vn/merchant_webapi/merchant.html";
 $apiUrl = "https://sandbox.vnpayment.vn/merchant_webapi/api/transaction";
 //Config input format
