@@ -108,14 +108,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                             <div class="box-body">
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label"> Thunbar   <span class="color-red">(*)</span></label>
-                                        <div class="col-sm-10">
+                                        <label for="inputEmail3" class="col-sm-3 control-label" style="padding: 0px; margin: 0px"> Thunbar   <span class="color-red">(*)</span></label>
+                                        <div class="col-sm-9">
                                             <input type="file" class="form-control" name="p_thunbar" id="imgInp">
                                             <?php if( isset( $errors['p_thunbar']) ): ?>
                                                 <span class="color-red"><i class="fa fa-bug"></i><?= $errors['p_thunbar'] ?></span>
                                             <?php endif ; ?>
                                         </div>
-                                        <div class="col-sm-10" style="margin-top: 10px;margin-left: 17%">
+                                        <div class="col-sm-9" style="margin-top: 10px;margin-left: 19%; float: right">
                                             <img src="<?= isset($_SESSION['p_thunbar']) ? $_SESSION['p_thunbar'] : '' ?>" alt="" class="img img-responsive" id="blah" title=" Logo " style="width: 100%;height: 258px;border: 1px solid #dedede">
                                         </div>
                                     </div>

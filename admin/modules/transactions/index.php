@@ -120,7 +120,7 @@
                                                 </td>
                                                 <td style="vertical-align: middle">
                                                     <a href="javascript:;void(0)" class="custome-btn btn-info btn-xs item-order" data-id=<?= $item['id' ] ?>><i class="fa fa-pencil-square"></i> Xem chi tiết </a>
-                                                    <a href="delete.php?id=<?= $item['id' ] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Huỷ đơn hàng  </a>
+                                                    <a href="delete.php?id=<?= $item['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Huỷ đơn hàng  </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ; ?>

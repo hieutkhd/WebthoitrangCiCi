@@ -8,7 +8,7 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
             <li class="">
-                <a href="/admin"><i class="fa fa-dashboard"></i> <span>Home</span></a>
+                <a href="/admin"><i class="fa fa-dashboard"></i> <span>Trang chủ</span></a>
             </li>
             <?php if ($_SESSION['admin_level'] == 2) : ?>
             <li class="<?= isset($modules) && $modules == 'users' ? 'active' : ''?>">
@@ -27,10 +27,10 @@
                 <a href="/admin/modules/cate-products"><i class="fa fa-list"></i> <span>Danh mục</span></a>
             </li>
             <li class="<?= isset($modules) && $modules == 'size' ? 'active' : ''?>">
-                <a href="/admin/modules/size"><i class="fa fa-list"></i> <span>Size</span></a>
+                <a href="/admin/modules/size"><i class="fa fa-list"></i> <span>Kích thước</span></a>
             </li>
             <li class="<?= isset($modules) && $modules == 'color' ? 'active' : ''?>">
-                <a href="/admin/modules/color"><i class="fa fa-list"></i> <span>Color</span></a>
+                <a href="/admin/modules/color"><i class="fa fa-list"></i> <span>Màu</span></a>
             </li>
             <li class="<?= isset($modules) && $modules == 'products' ? 'active' : ''?>">
                 <a href="/admin/modules/products"><i class="fa fa-book"></i> <span>Sản phẩm</span></a>
@@ -42,7 +42,7 @@
             <li class="<?= isset($modules) && $modules == 'warehouses' ? 'active' : ''?>">
                 <a href="/admin/modules/warehouses"><i class="fa fa-book"></i> <span> Quản lý kho </span></a>
             </li>
-            <li class="<?= isset($modules) && $modules == 'warehouses' ? 'active' : ''?>">
+            <li class="<?= isset($modules) && $modules == 'user-contact' ? 'active' : ''?>">
                 <a href="/admin/modules/contact"><i class="fa fa-book"></i> <span>Danh sách liên hệ</span></a>
             </li>
             <?php endif; ?>
