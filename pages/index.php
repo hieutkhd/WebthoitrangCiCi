@@ -70,13 +70,13 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="/public/frontend/images/slide/b__trai_master.jpg" alt="Los Angeles">
+                                        <img src="/public/frontend/images/slide/9557036_orig.jpg" alt="Los Angeles">
                                     </div>
                                     <div class="item">
-                                        <img src="/public/frontend/images/slide/banner_page_2_master.jpg" alt="Chicago">
+                                        <img src="/public/frontend/images/slide/banner-thoi-trang-dep.jpg" alt="Chicago">
                                     </div>
                                     <div class="item">
-                                        <img src="/public/frontend/images/slide/banner_page_3_master.jpg" alt="New York">
+                                        <img src="/public/frontend/images/slide/b__trai_master.jpg" alt="New York">
                                     </div>
                                 </div>
                                 <!-- Left and right controls -->
