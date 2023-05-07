@@ -9,6 +9,7 @@
      *  lấy id url
      */
     $id = (int)Input::get('id');
+    $status = (int)Input::get('status');
 
     /**
      * lấy id cần  sửa 
@@ -27,9 +28,11 @@
         header("Location: ".baseServerName().'/admin/modules/transactions');exit();
     }
   
-    $time_pay = date('Y-m-d');  
-    $hot = $transaction['tst_status'] == 1 ? 0 : 1;
+    $time_pay = date('Y-m-d');
+    $hot = $status;
+
     $update = DB::update("transactions",array('tst_status' => $hot,'tst_date_payment' => $time_pay) ,array("id" =>  $id));
+
     if ( $update && $update > 0 )
     {
         $orders = DB::query('orders','*',' and od_transaction_id = '. $id);
@@ -39,7 +42,12 @@
                 $product = DB::fetchOne('products',(int)$item['od_product_id']);
                 if( $product )
                 {
-                    $pay    = ($hot  == 1) ? intval($product['prd_pay']) + intval($item['od_qty']) : intval($product['prd_pay']) - intval($item['od_qty']);
+                    if (in_array($hot, [2, 3])) {
+                        $pay  = intval($product['prd_pay']) + intval($item['od_qty']);
+                    } else if ($hot == 4) {
+                        $pay  = intval($product['prd_pay']) - intval($item['od_qty']);
+                    }
+
                     $totalProduct    = ($hot  == 0) ? $product['prd_number'] + intval($item['od_qty']) : $product['prd_number'] - intval($item['od_qty']);
                     $id_update = DB::update('products',array('prd_pay' => $pay, 'prd_number' => $totalProduct) , ' id = ' . (int)$item['od_product_id']);
                 }

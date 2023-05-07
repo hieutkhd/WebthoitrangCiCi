@@ -25,7 +25,10 @@ var frontend = {
             let size =  $("#size").val() !== undefined ? $("#size").val() : '';
             let color =  $("#color").val() !== undefined ? $("#color").val() : '';
 
-
+            if ($qty < 1) {
+                $.notify('Số lượng sản phẩm không được phép nhỏ hơn 1','error');
+                return false;
+            }
             if ($("#size").val() !== undefined) {
                 if (size == '') {
                     $.notify('Bạn cần chọn size sản phẩm','error');

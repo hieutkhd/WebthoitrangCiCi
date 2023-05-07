@@ -86,7 +86,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#">Danh mục sản phẩm </a></li>
                         <li class="active"> Chỉnh sửa </li>
                     </ol>
@@ -128,22 +128,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="" class="col-sm-3 control-label"> Hot </label>
-                                                <div class="col-sm-3">
-                                                    <div class="radio">
-                                                        <label>
-                                                        <input type="radio" name="cpr_hot" id="optionsRadios1" value="1" <?= intval($cate['cpr_hot']) == 1 ? "checked='checked'" : '' ?>>
-                                                        Có
-                                                        </label>
-                                                    </div>
-                                                    <div class="radio">
-                                                        <label>
-                                                        <input type="radio" name="cpr_hot" id="optionsRadios2" value="0" <?= intval($cate['cpr_hot']) == 0 ? "checked='checked'" : '' ?>>
-                                                        Không
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <label for="" class="col-sm-2 control-label"> Active </label>
+                                                <label for="" class="col-sm-2 control-label"> Trạng thái </label>
                                                 <div class="col-sm-3">
                                                     <div class="radio">
                                                         <label>

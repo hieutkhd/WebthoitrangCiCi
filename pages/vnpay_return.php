@@ -29,6 +29,7 @@ foreach ($_GET as $key => $value) {
 if (intval($inputData['vnp_TransactionStatus']) !== 0) {
     $url = baseServerName();
     header('Location: ' . $url);
+    return false;
 }
 unset($inputData['vnp_SecureHash']);
 ksort($inputData);

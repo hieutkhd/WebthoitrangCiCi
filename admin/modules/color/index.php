@@ -1,6 +1,6 @@
 <?php
     $modules = 'color';
-    $title_global = 'Danh sách color ';
+    $title_global = 'Danh sách màu ';
     require_once __DIR__ .'/../../autoload.php';
     $colors = Pagination::pagination('colors','','page',10);
 ?>
@@ -30,8 +30,8 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#">Color </a></li>
+                        <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+                        <li><a href="#">Màu </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
                 </section>
@@ -56,8 +56,8 @@
                                                 <td><?= $color['id'] ?></td>
                                                 <td> <?= $color['name'] ?></td>
                                                 <td>
-                                                    <a href="update.php?id=<?= $color['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                    <a href="delete.php?id=<?= $color['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                    <a href="update.php?id=<?= $color['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
+                                                    <a href="delete.php?id=<?= $color['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ?>

@@ -47,8 +47,8 @@
             <th> Hình ảnh </th>
             <th class="text-center">Giá </th>
             <th>Số Lượng</th>
-            <th>Size</th>
-            <th>Color</th>
+            <th>Kích thước</th>
+            <th>Màu</th>
             <th>Thành Tiền</th>
         </tr>
         </tbody>

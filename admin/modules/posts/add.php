@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 <?= isset($title_global) ? $title_global : '' ?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                 <li><a href="#">Bài viết</a></li>
                 <li class="active">Thêm mới</li>
             </ol>
@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                             <div class="box-body">
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-3 control-label" style="padding: 0px; margin: 0px"> Thunbar   <span class="color-red">(*)</span></label>
+                                        <label for="inputEmail3" class="col-sm-3 control-label" style="padding: 0px; margin: 0px"> Hình ảnh   <span class="color-red">(*)</span></label>
                                         <div class="col-sm-9">
                                             <input type="file" class="form-control" name="p_thunbar" id="imgInp">
                                             <?php if( isset( $errors['p_thunbar']) ): ?>
@@ -131,7 +131,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label" style="margin-bottom: 10px;"> Description <span class="color-red">(*)</span></label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label" style="margin-bottom: 10px;"> Mô tả <span class="color-red">(*)</span></label>
                                         <div class="col-sm-10" style="margin-right: 0;margin-left: 0">
                                             <textarea name="p_description"  cols="10" rows="3" class="form-control" placeholder=" Mô tả ngắn về nội dung bài viết , không quá 250 ký tự"><?= isset($description) ? $description : '' ?></textarea>
                                             <?php if( isset( $errors['p_description']) ): ?>

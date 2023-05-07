@@ -1,6 +1,6 @@
 <?php
     $modules = 'size';
-    $title_global = 'Danh sách size ';
+    $title_global = 'Danh sách kích thước ';
     require_once __DIR__ .'/../../autoload.php';
     $sizes = Pagination::pagination('sizes','','page',10);
 ?>
@@ -31,7 +31,7 @@
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#">Size </a></li>
+                        <li><a href="#">Kích thước </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
                 </section>
@@ -48,7 +48,7 @@
                                     <tbody>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Tên size</th>
+                                            <th>Tên kích thước</th>
                                             <th>Hành động</th>
                                         </tr>
                                         <?php foreach ($sizes as $key => $size): ?>
@@ -56,8 +56,8 @@
                                                 <td><?= $size['id'] ?></td>
                                                 <td> <?= $size['name'] ?></td>
                                                 <td>
-                                                    <a href="update.php?id=<?= $size['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                    <a href="delete.php?id=<?= $size['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                    <a href="update.php?id=<?= $size['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
+                                                    <a href="delete.php?id=<?= $size['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ?>

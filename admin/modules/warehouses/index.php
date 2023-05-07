@@ -36,8 +36,8 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#"> Sản Phẩm </a></li>
+                        <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+                        <li><a href="#"> Kho </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
                 </section>
@@ -52,9 +52,9 @@
                                     <tbody>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Thunbar</th>
-                                        <th>Info</th>
+                                        <th>Tên</th>
+                                        <th>Hình ảnh</th>
+                                        <th>Thông tin</th>
                                     </tr>
                                     <?php foreach($products as $pro) :?>
                                         <tr class='<?= $pro['prd_number'] <= 5 ? "bg-danger-nhat" : "" ?>'>

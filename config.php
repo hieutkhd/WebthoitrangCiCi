@@ -57,3 +57,19 @@ $arrayPrice = [
         '20000000'
     ]
 ];
+
+$status = [
+    0 => 'Chưa thanh toán',
+    1 => 'Đã thanh toán',
+    2 => 'Đang vận chuyển',
+    3 => 'Giao hàng thành công',
+    4 => 'Đã hủy'
+];
+
+$status_class = [
+    0 => 'label-default',
+    1 => 'label-info',
+    2 => 'label-primary',
+    3 => 'label-success',
+    4 => 'label-danger',
+];

@@ -1,6 +1,6 @@
 <?php
     $modules = 'color';
-    $title_global = 'Thêm mới color ';
+    $title_global = 'Thêm mới màu ';
     require_once __DIR__ .'/../../autoload.php';
 
 
@@ -64,8 +64,8 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="#">Color</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+                        <li><a href="#">Màu</a></li>
                         <li class="active"> Thêm mới</li>
                     </ol>
                 </section>
@@ -81,7 +81,7 @@
                                         <input type="hidden" name="_token" value="ZPEdLE4Il64joczf4kmj8Q9eQBvPxcz1qVZwfLOB">
                                         <div class="box-body">
                                             <div class="form-group">
-                                                <label for="inputEmail3" class="col-sm-2 control-label"> Tên color <span class="color-red">(*)</span></label>
+                                                <label for="inputEmail3" class="col-sm-2 control-label"> Tên màu <span class="color-red">(*)</span></label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" name="name" id="inputEmail3" placeholder="VD (màu vàng, màu đỏ, màu đỏ đen)" autocomplete="off" value="<?= isset($name) ? $name : ''?>">
                                                     <?php if(isset($errors['name'])) :?>

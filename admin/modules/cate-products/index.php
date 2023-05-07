@@ -30,7 +30,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#">Danh mục sản phẩm </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
@@ -51,8 +51,8 @@
                                             <th>Tên danh mục</th>
                                             <th>Các danh mục</th>
                                             <!-- <th>Hot</th> -->
-                                            <th>Active</th>
-                                            <th>Action</th>
+                                            <th>Trạng thái</th>
+                                            <th>Hành động</th>
                                         </tr>
                                         <?php foreach ($category_products as $key => $cate): ?>
                                             <tr>
@@ -71,8 +71,8 @@
                                                <!--  <td><a href="hot.php?id=<?= $cate['id'] ?>" class="custome-btn label <?= $cate['cpr_hot'] == 1 ? 'label-info' : 'label-default' ?>"><span><?= $cate['cpr_hot'] == 1 ? 'Hot' : 'None' ?></span></a></td> -->
                                                 <td><a href="active.php?id=<?= $cate['id'] ?>" class="custome-btn label <?= $cate['cpr_active'] == 1 ? 'label-info' : 'label-default' ?>"><span><?= $cate['cpr_active'] == 1 ? 'Active' : 'Hide' ?></span></a></td>
                                                 <td>
-                                                    <a href="update.php?id=<?= $cate['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                    <a href="delete.php?id=<?= $cate['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                    <a href="update.php?id=<?= $cate['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
+                                                    <a href="delete.php?id=<?= $cate['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ?>

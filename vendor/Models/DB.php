@@ -152,7 +152,7 @@
             {
                 $sql .= $conditions ;
             }
-        
+
             $check = mysqli_query($that->link,$sql);
             if ( ! $check)
             {

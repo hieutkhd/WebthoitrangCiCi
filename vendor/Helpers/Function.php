@@ -18,6 +18,7 @@ if ( ! function_exists( 'dd' ))
             var_dump($data);
         }
         echo '</pre>';
+        die;
     }
 }
 

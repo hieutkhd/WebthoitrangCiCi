@@ -122,7 +122,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#">Sản phẩm </a></li>
                         <li class="active">Thêm mới</li>
                     </ol>
@@ -313,3 +313,4 @@
             });
         </script>
 
+    </body>

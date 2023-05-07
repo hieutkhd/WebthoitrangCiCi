@@ -49,7 +49,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#"> Đơn hàng  </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
@@ -102,7 +102,8 @@
                                             <th>Tổng tiền</th>
                                             <th>Thanh toán</th>
                                             <th>Trạng thái</th>
-                                            <th>Action</th>
+                                            <th class="text-center">Thời gian</th>
+                                            <th class="text-center">Hành động</th>
                                         </tr>
                                         <?php foreach ($transactions as $key => $item) :?>
                                             <tr>
@@ -116,11 +117,20 @@
                                                 <td style="vertical-align: middle"><?= formatPrice($item['tst_total']) ?> đ</td>
                                                 <td style="vertical-align: middle"><?= $item['tst_payment_method'] ?></td>
                                                 <td style="vertical-align: middle">
-                                                    <a href="status.php?id=<?= $item['id'] ?>" class="custome-btn label <?= $item['tst_status'] == 1 ? 'label-info' : 'label-default' ?>"><span> <?= $item['tst_status'] == 1 ? ' Đã thanh toán ' : ' Chưa thanh toán ' ?></span></a>
+                                                    <label class="label <?php echo isset($status_class[$item['tst_status']]) ? $status_class[$item['tst_status']] : '' ?>">
+                                                        <?php echo isset($status[$item['tst_status']]) ? $status[$item['tst_status']] : '' ?>
+                                                    </label>
                                                 </td>
-                                                <td style="vertical-align: middle">
+                                                <td class="text-center" style="vertical-align: middle">
+                                                    <?php echo $item['tst_date_payment'] ?>
+                                                </td>
+                                                <td style="vertical-align: middle" class="text-center">
                                                     <a href="javascript:;void(0)" class="custome-btn btn-info btn-xs item-order" data-id=<?= $item['id' ] ?>><i class="fa fa-pencil-square"></i> Xem chi tiết </a>
-                                                    <a href="delete.php?id=<?= $item['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Huỷ đơn hàng  </a>
+                                                    <?php if (in_array($item['tst_status'] , [0, 1, 2])): ?>
+                                                    <a href="status.php?id=<?= $item['id'] ?>&status=4" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Huỷ đơn hàng  </a>
+                                                    <br />
+                                                    <a href="update_status.php?id=<?= $item['id'] ?>" class="custome-btn btn-xs btn-primary" ><i class="fa fa-fw fa-gear"></i>Cập nhật trạng thái  </a>
+                                                    <?php endif; ?>
                                                 </td>
                                             </tr>
                                         <?php endforeach ; ?>

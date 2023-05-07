@@ -148,7 +148,7 @@ window.onscroll = function() {myFunction()};
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         header.classList.add("sticky");
-        $(".fix-ads").css("top","70px")
+        $(".fix-ads").css("top","30px")
       } else {
         header.classList.remove("sticky");
         $(".fix-ads").css("top","200px")

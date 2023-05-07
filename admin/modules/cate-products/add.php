@@ -73,7 +73,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#">Danh Mục Sản phẩm </a></li>
                         <li class="active"> Thêm mới</li>
                     </ol>
@@ -130,7 +130,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <label for="" class="col-sm-2 control-label"> Active </label>
+                                                <label for="" class="col-sm-2 control-label"> Trạng thái </label>
                                                 <div class="col-sm-3">
                                                     <div class="radio">
                                                         <label>

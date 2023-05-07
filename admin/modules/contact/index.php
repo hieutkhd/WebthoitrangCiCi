@@ -30,7 +30,7 @@ $user_contacts = Pagination::pagination('user_contact','','page',10);
                 <?= isset($title_global) ? $title_global : '' ?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                 <li class="active"> Danh sách liên hệ</li>
             </ol>
         </section>

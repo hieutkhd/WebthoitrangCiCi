@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row clearfix">
                 <div class="col-md-6" id="header-text" style="margin-top: 10px;">
-                    <b style="font-family: sans-serif;">THỜI TRANG UY TÍN, CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM</b>
+                    <b style="font-family: sans-serif;">GIÀY THỂ THAO UY TÍN, CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM</b>
                 </div>
                 <div class="col-md-6">
                     <nav id="header-nav-top">
@@ -69,7 +69,7 @@
             </script>
             <div class="col-md-4">
                 <a href="/">
-                    <img src="/public/frontend/images/73b1987e16215ebc976b5052bfac078d.jpg" class="logo-website">
+                    <img src="/public/frontend/images/logo-default.png" class="logo-website">
                 </a>
             </div>
             <div class="col-md-5">

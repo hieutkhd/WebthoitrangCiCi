@@ -32,7 +32,7 @@
                         <?= isset($title_global) ? $title_global : '' ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#"> Bài viết </a></li>
                         <li class="active"> Danh sách</li>
                     </ol>
@@ -50,10 +50,10 @@
                                     <tbody>
                                         <tr>
                                             <th>STT</th>
-                                            <th style="width: 30%">Name</th>
-                                            <th style="width: 30%">Descriptions</th>
-                                            <th>Thunbar</th>
-                                            <th>Action</th>
+                                            <th style="width: 30%">Tiêu đề</th>
+                                            <th style="width: 30%">Mô tả</th>
+                                            <th>Hình ảnh</th>
+                                            <th>Hành động</th>
                                         </tr>
                                         <?php foreach($posts as $k => $post) :?>
                                         <tr>
@@ -66,8 +66,8 @@
                                                 <?php endif; ?>
                                             </th>
                                             <td>
-                                                <a href="update.php?id=<?=  $post['id']?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                <a href="delete.php?id=<?= $post['id']?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                <a href="update.php?id=<?=  $post['id']?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
+                                                <a href="delete.php?id=<?= $post['id']?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa </a>
                                             </td>
                                         </tr>
                                         <?php endforeach; ?>

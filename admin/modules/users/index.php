@@ -30,7 +30,7 @@
                         <?= $title_global  ?>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#">Thành viên </a></li>
                         <li class="active"> Danh sách thành viên  </li>
                     </ol>
@@ -52,10 +52,10 @@
                                             <th>Họ và tên</th>
                                             <th>Email</th>
                                             <th>Phone</th>
-                                            <th>Avatar</th>
+                                            <th>Hình ảnh</th>
                                             <th>Vai trò</th>
-                                            <th>Active</th>
-                                            <th>Action</th>
+                                            <th>Trạng thái</th>
+                                            <th>Hành động</th>
                                         </tr>
                                         <?php foreach($users as $user) :?>
                                             <tr>
@@ -77,8 +77,7 @@
                                                 </td>
                                                 <td><a href="active.php?id=<?= $user['id'] ?>" class="custome-btn label <?= $user['status'] == 1 ? 'label-info' : 'label-default' ?>"><span><?= $user['status'] == 1 ? 'Họat động' : 'Khóa' ?></span></a></td>
                                                 <td>
-                                                    <a href="update.php?id=<?= $user['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                    <a href="delete.php?id=<?= $user['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                    <a href="update.php?id=<?= $user['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ; ?>
