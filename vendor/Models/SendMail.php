@@ -12,8 +12,8 @@ class SendMail
             $mail->isSMTP();                                      // Set mail sử dụng SMTP
             $mail->Host = 'smtp.gmail.com';  // Chỉ định máy chủ SMTP chính và dự phòng
             $mail->SMTPAuth = true;                               // Kích hoạt xác thực SMTP
-            $mail->Username = 'duocnguyenit1994@gmail.com';                 // SMTP username
-            $mail->Password = 'gdmcjsdzhyoifwjn';                           // SMTP password
+            $mail->Username = 'waatvhaui@gmail.com';                 // SMTP username
+            $mail->Password = 'vrnesnhsyaawovju';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Kích hoạt mã TLS, `ssl` also accepted
             $mail->Port = 587;                                 // Cổng TCP để kết nối với
             $mail->SMTPOptions = array(
@@ -25,7 +25,7 @@ class SendMail
             );
 
             //Recipients
-            $mail->setFrom('duocnguyenit1994@gmail.com', 'WebthoitrangCici');
+            $mail->setFrom('waatvhaui@gmail.com', 'Cici');
             $mail->addAddress($mTo, $nTo);     // Add a recipient
 
             //Content
