@@ -55,7 +55,9 @@
                                         <?= $item['tst_payment_method'] ?>
                                     </td>
                                     <td style="vertical-align: middle;">
-                                        <a href="" class="custome-btn label <?= $item['tst_status'] == 1 ? 'label-info' : 'label-default' ?>"><span> <?= $item['tst_status'] == 1 ? ' Đã thanh toán ' : ' Chưa thanh toán ' ?></span></a>
+                                        <label class="label <?php echo isset($status_class[$item['tst_status']]) ? $status_class[$item['tst_status']] : '' ?>">
+                                            <?php echo isset($status[$item['tst_status']]) ? $status[$item['tst_status']] : '' ?>
+                                        </label>
                                     </td>
                                     <td style="vertical-align: middle;">
                                         <a href="javascript:;void(0)" class="custome-btn btn-info btn-xs item-order" data-id="<?= $item['id' ] ?>" style="margin-right: 10px;"> Xem chi tiết </a>

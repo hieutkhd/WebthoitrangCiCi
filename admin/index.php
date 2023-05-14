@@ -12,12 +12,12 @@
 
     // doanh thu ngay 
     $day = date('d');
-    $sqltime2 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3) AND DAY(tst_date_payment) = $day";
+    $sqltime2 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3, 4) AND DAY(tst_date_payment) = $day";
     $amountDay = DB::fetchsql($sqltime2);
 
     // doanh thu tháng
     $month = date('m');
-    $sqltime3 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE  tst_status IN (1, 2, 3) AND MONTH(tst_date_payment) = $month";
+    $sqltime3 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE  tst_status IN (1, 2, 3, 4) AND MONTH(tst_date_payment) = $month";
     $amountMonth = DB::fetchsql($sqltime3);
 
     /**
@@ -31,12 +31,12 @@
     // }
  
     $week = date('W', strtotime($dates));
-    $sqltime4 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3) AND WEEK(tst_date_payment) =  $week";
+    $sqltime4 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3, 4) AND WEEK(tst_date_payment) =  $week";
     $amountWeek = DB::fetchsql($sqltime4);
 
     // tong doanh thu
     $year = date('Y');
-    $sqltime5 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3) AND YEAR(tst_date_payment) = $year";
+    $sqltime5 = "SELECT SUM(tst_total) as doanhthu FROM transactions WHERE tst_status IN (1, 2, 3, 4) AND YEAR(tst_date_payment) = $year";
     $amountSum = DB::fetchsql($sqltime5);
 
 ?>

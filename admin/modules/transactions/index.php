@@ -126,8 +126,10 @@
                                                 </td>
                                                 <td style="vertical-align: middle" class="text-center">
                                                     <a href="javascript:;void(0)" class="custome-btn btn-info btn-xs item-order" data-id=<?= $item['id' ] ?>><i class="fa fa-pencil-square"></i> Xem chi tiết </a>
+                                                    <?php if (in_array($item['tst_status'] , [3, 4])): ?>
+                                                    <a href="status.php?id=<?= $item['id'] ?>&status=4" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa  </a>
+                                                    <?php endif; ?>
                                                     <?php if (in_array($item['tst_status'] , [0, 1, 2])): ?>
-                                                    <a href="status.php?id=<?= $item['id'] ?>&status=4" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Huỷ đơn hàng  </a>
                                                     <br />
                                                     <a href="update_status.php?id=<?= $item['id'] ?>" class="custome-btn btn-xs btn-primary" ><i class="fa fa-fw fa-gear"></i>Cập nhật trạng thái  </a>
                                                     <?php endif; ?>

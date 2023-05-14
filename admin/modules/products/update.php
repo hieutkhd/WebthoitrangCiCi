@@ -81,6 +81,8 @@
                 'prd_sale'                   => $sale,
                 'pro_size'                   => $size,
                 'pro_color'                   => $color,
+                'created_at'                  => date('Y-m-d H:i'),
+                'updated_at'                  => date('Y-m-d H:i'),
             ];
 
             // kiểm tra nếu có tồn tại hình ảnh thì gán dữ liệu update

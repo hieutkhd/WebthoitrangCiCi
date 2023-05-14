@@ -44,12 +44,14 @@
                 {
                     if (in_array($hot, [2, 3])) {
                         $pay  = intval($product['prd_pay']) + intval($item['od_qty']);
+                        $totalProduct = $product['prd_number'] - intval($item['od_qty']);
                     } else if ($hot == 4) {
                         $pay  = intval($product['prd_pay']) - intval($item['od_qty']);
+                        $totalProduct = $product['prd_number'] + intval($item['od_qty']);
                     }
-
-                    $totalProduct    = ($hot  == 0) ? $product['prd_number'] + intval($item['od_qty']) : $product['prd_number'] - intval($item['od_qty']);
-                    $id_update = DB::update('products',array('prd_pay' => $pay, 'prd_number' => $totalProduct) , ' id = ' . (int)$item['od_product_id']);
+                    if (isset($pay) && isset($totalProduct)) {
+                        $id_update = DB::update('products',array('prd_pay' => $pay, 'prd_number' => $totalProduct) , ' id = ' . (int)$item['od_product_id']);
+                    }
                 }
             }
         }

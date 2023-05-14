@@ -156,12 +156,13 @@
                                     <tbody>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Thunbar</th>
-                                            <th>Info</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Hình ảnh</th>
+                                            <th>Thông tin</th>
                                             <th>Hot</th>
-                                            <th>Active</th>
-                                            <th>Action</th>
+                                            <th>Trạng thái</th>
+                                            <th>Thời gian</th>
+                                            <th>Hành dộng</th>
                                         </tr>
                                         <?php foreach($products as $pro) :?>
                                             <tr class='<?= $pro['prd_number'] <= 5 ? "bg-danger-nhat" : "" ?>'>
@@ -178,8 +179,11 @@
                                                 <td><a href="hot.php?id=<?= $pro['id'] ?>" class="custome-btn label <?= $pro['prd_hot'] == 1 ? 'label-info' : 'label-default' ?>"><span><?= $pro['prd_hot'] == 1 ? 'Hot' : 'None' ?></span></a></td>
                                                 <td><a href="active.php?id=<?= $pro['id'] ?>" class="custome-btn label <?= $pro['prd_active'] == 1 ? 'label-info' : 'label-default' ?>"><span><?= $pro['prd_active'] == 1 ? 'Active' : 'Hide' ?></span></a></td>
                                                 <td>
-                                                    <a href="update.php?id=<?= $pro['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Edit </a>
-                                                    <a href="delete.php?id=<?= $pro['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Trash </a>
+                                                    <?php echo $pro['updated_at'] ?>
+                                                </td>
+                                                <td>
+                                                    <a href="update.php?id=<?= $pro['id'] ?>" class="custome-btn btn-info btn-xs"><i class="fa fa-pencil-square"></i> Chỉnh sửa </a>
+                                                    <a href="delete.php?id=<?= $pro['id'] ?>" class="custome-btn btn-danger btn-xs delete" ><i class="fa fa-trash"></i> Xóa </a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ; ?>

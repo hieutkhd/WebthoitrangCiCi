@@ -77,6 +77,8 @@
                 'prd_thunbar'                => $hinhanh,
                 'pro_size'                   => $size,
                 'pro_color'                   => $color,
+                'created_at'                  => date('Y-m-d H:i'),
+                'updated_at'                  => date('Y-m-d H:i'),
             ];
             //tiến hành insert 
             $id_insert = DB::insert('products', $data);

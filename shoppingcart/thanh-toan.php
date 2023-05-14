@@ -36,6 +36,7 @@
             'tst_user_id' => $_SESSION['id'],
             'tst_code_order' => $code_order,
             'tst_date_payment' => date('Y-m-d H:i'),
+            'tst_status' => 0
         ];
 
         if ($method == 1) {
